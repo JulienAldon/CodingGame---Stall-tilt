@@ -10,4 +10,4 @@ jobs:
             -   uses: actions/checkout@v2
 
             -   name: continuous integration process
-                run: test_case/test.sh
+                run: bash test_case/test.sh
