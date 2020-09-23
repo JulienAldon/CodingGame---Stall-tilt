@@ -49,6 +49,7 @@ if __name__ == "__main__":
     finalRanking = ranking.copy()
     falls = [[]]
     # get falls in list
+    # TODO: refacto to check qui est tombe
     for key, value in ranking.items():
         i = 0
         for b in bends:
@@ -66,7 +67,7 @@ if __name__ == "__main__":
 
     # display
     print(optiSpeed(min(bends)))
-    print("y")
+    print('y')
     finalRanking.update(dict(orderedFalls))
     for key, value in finalRanking.items():
         print(key)
